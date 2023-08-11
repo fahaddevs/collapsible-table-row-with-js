@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapsible table row with js</title>
+  <!-- Fontawesome css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <table class="site-table">
+      <thead>
+        <tr>
+          <th>SIZE</th>
+          <th>COLOR</th>
+          <th>INVENTORY</th>
+          <th>PRICE</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="expandable-row" data-rows="size1">
+          <td>XS</td>
+          <td>14 colors</td>
+          <td>in stock</td>
+          <td>
+            <p>$10.7 - $10.8</p>
+            <p class="site-color">$9.7 - $9.8 Pro plan</p>
+          </td>
+          <td>
+            <i class="fas fa-chevron-down"></i>
+          </td>
+        </tr>
+        <tr class="expanded-row" data-parent="size1">
+          <td></td>
+          <td><span class="color-dot" style="background-color: #1B6B93;"></span> White</td>
+          <td>in stock</td>
+          <td>
+            <p>$10.7 - $10.8</p>
+            <p class="site-color">$9.7 - $9.8 Pro plan</p>
+          </td>
+          <td></td>
+        </tr>
+        <tr class="expanded-row" data-parent="size1">
+          <td></td>
+          <td><span class="color-dot" style="background-color: #1B6B93;"></span> White</td>
+          <td>in stock</td>
+          <td>
+            <p>$10.7 - $10.8</p>
+            <p class="site-color">$9.7 - $9.8 Pro plan</p>
+          </td>
+          <td></td>
+        </tr>
+        <tr class="expanded-row" data-parent="size1">
+          <td></td>
+          <td><span class="color-dot" style="background-color: #1B6B93;"></span> White</td>
+          <td>in stock</td>
+          <td>
+            <p>$10.7 - $10.8</p>
+            <p class="site-color">$9.7 - $9.8 Pro plan</p>
+          </td>
+          <td></td>
+        </tr>
+
+        <tr class="expandable-row" data-rows="size2">
+          <td>XS</td>
+          <td>14 colors</td>
+          <td>in stock</td>
+          <td>
+            <p>$10.7 - $10.8</p>
+            <p class="site-color">$9.7 - $9.8 Pro plan</p>
+          </td>
+          <td>
+            <i class="fas fa-chevron-down"></i>
+          </td>
+        </tr>
+        <tr class="expanded-row" data-parent="size2">
+          <td></td>
+          <td><span class="color-dot" style="background-color: #1B6B93;"></span> White</td>
+          <td>in stock</td>
+          <td>
+            <p>$10.7 - $10.8</p>
+            <p class="site-color">$9.7 - $9.8 Pro plan</p>
+          </td>
+          <td></td>
+        </tr>
+        <tr class="expanded-row" data-parent="size2">
+          <td></td>
+          <td><span class="color-dot" style="background-color: #1B6B93;"></span> White</td>
+          <td>in stock</td>
+          <td>
+            <p>$10.7 - $10.8</p>
+            <p class="site-color">$9.7 - $9.8 Pro plan</p>
+          </td>
+          <td></td>
+        </tr>
+        <tr class="expanded-row" data-parent="size2">
+          <td></td>
+          <td><span class="color-dot" style="background-color: #1B6B93;"></span> White</td>
+          <td>in stock</td>
+          <td>
+            <p>$10.7 - $10.8</p>
+            <p class="site-color">$9.7 - $9.8 Pro plan</p>
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
